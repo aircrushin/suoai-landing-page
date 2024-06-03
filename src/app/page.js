@@ -26,7 +26,7 @@ export default function Component() {
               <div className=" flex flex-col justify-center space-y-4">
                 <div className="space-y-4">
                   <p className="-mt-10 mb-12 text-gray-400">索飞 AI 是基于 2 千亿 MoE 模型底座的工程安全认知大模型，致力于实现类人智慧的通用工程智能</p>
-                  <h1 className="text-5xl font-bold tracking-wide sm:text-6xl xl:text-7xl/none text-blue-400">
+                  <h1 className="text-4xl font-bold tracking-wide sm:text-6xl xl:text-7xl/none text-blue-400">
                     索飞 AI 专家系统
                   </h1>
                   <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-800 lg:text-3xl text-xl">
