@@ -1,52 +1,15 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/Nnexy13bkMl
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import Link from "next/link"
-
+import Contact from "@/components/contact"
+import Footer from "@/components/footer"
+import Header from "@/components/header"
+import Hero from "@/components/hero"
+import Ability from "@/components/ability"
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-gradient-to-b from-white to-blue-200">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <MountainIcon className="h-6 w-6" />
-          <span className="sr-only">Suo AI</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="https://www.safebition.com/chat" className="text-sm font-medium hover:underline underline-offset-4 text-gray-600" prefetch={false} target="_blank">
-            立即体验
-          </Link>
-        </nav>
-      </header>
+      <Header />
       <main className="flex-1">
-        <section className="w-full py-24 md:py-24 lg:py-32 lg:min-h-[80vh]">
-          <div className="px-4 md:px-6">
-            <div className="flex justify-center">
-              <div className=" flex flex-col justify-center space-y-4">
-                <div className="space-y-4">
-                  <p className="-mt-10 mb-12 text-gray-400">索飞 AI 是基于 6 百亿 MoE 模型底座的工程安全认知大模型，致力于实现类人智慧的通用工程智能</p>
-                  <h1 className="text-4xl font-bold tracking-wide sm:text-6xl xl:text-7xl/none text-blue-400">
-                    索飞 AI 专家系统
-                  </h1>
-                  <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-800 lg:text-3xl text-xl">
-                  全新体验，无限可能
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <Link
-                    href="https://www.safebition.com/chat"
-                    className="mt-12 inline-flex h-12 items-center justify-center rounded-md bg-gradient-to-r from-gray-100 to-blue-300 px-8 font-medium text-blue-400 shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 hover:bg-gray-900/90 hover:scale-110 transition-all duration-300"
-                    prefetch={false}
-                  >
-                    立即体验
-                  </Link>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero />
         <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
           <div className="px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-3">
@@ -81,57 +44,10 @@ export default function Component() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 min-h-[80vh]">
-        <div className="px-6 md:px-12 lg:px-20">
-          <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-4">
-                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                  亮点功能
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">AI 赋能养护、工程安全领域</h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  只需要一个指令即可完成复杂任务：索飞 AI 懂你所言，答你所问，创你所需，解你所难，学你所教，致力于实现类人智慧的通用工程智能。
-                </p>
-              </div>
-              <ul className="grid gap-2 py-4">
-                <li>
-                  <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  联网搜索：快速找到相关新闻和政策，不用担心信息过时
-                </li>
-                <li>
-                  <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  海里知识库：海量知识数据，助您快速解决专业问题
-                </li>
-                <li>
-                  <CheckIcon className="mr-2 inline-block h-4 w-4" />
-                  方案生成：根据您的需求，智能生成解决方案，并输出为Word、Excel、PDF等格式
-                </li>
-              </ul>
-            </div>
-            <img
-              src="/Plan.png"
-              alt="Image"
-              className="mx-auto aspect-video rounded-xl shadow-lg w-full h-auto sm:w-full lg:order-last"
-            />
-          </div>
-        </div>
-      </section>
+        <Ability></Ability>
+        <Contact></Contact>
+        <Footer></Footer>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
-        <p className="text-xs text-gray-500 dark:text-gray-400">&copy; 2024 Safebition. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Terms of Service
-          </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Privacy
-          </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Contact
-          </Link>
-        </nav>
-      </footer>
     </div>
   )
 }
@@ -155,27 +71,6 @@ function BoltIcon(props) {
     </svg>
   )
 }
-
-
-function MountainIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
-  )
-}
-
 
 function RocketIcon(props) {
   return (
@@ -215,25 +110,6 @@ function ShieldIcon(props) {
       strokeLinejoin="round"
     >
       <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-    </svg>
-  )
-}
-
-function CheckIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M20 6 9 17l-5-5" />
     </svg>
   )
 }
