@@ -25,7 +25,7 @@ export default function Component() {
             <div className="flex justify-center">
               <div className=" flex flex-col justify-center space-y-4">
                 <div className="space-y-4">
-                  <p className="-mt-10 mb-12 text-gray-400">索飞 AI 是基于 2 千亿 MoE 模型底座的工程安全认知大模型，致力于实现类人智慧的通用工程智能</p>
+                  <p className="-mt-10 mb-12 text-gray-400">索飞 AI 是基于 6 百亿 MoE 模型底座的工程安全认知大模型，致力于实现类人智慧的通用工程智能</p>
                   <h1 className="text-4xl font-bold tracking-wide sm:text-6xl xl:text-7xl/none text-blue-400">
                     索飞 AI 专家系统
                   </h1>
@@ -47,8 +47,8 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+          <div className="px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-3">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <RocketIcon className="h-12 w-12 text-gray-900 dark:text-gray-50" />
@@ -80,11 +80,12 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
+
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 min-h-[80vh]">
+        <div className="px-6 md:px-12 lg:px-20">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
             <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
+              <div className="space-y-4">
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                   亮点功能
                 </div>
@@ -117,7 +118,7 @@ export default function Component() {
         </div>
       </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white">
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
         <p className="text-xs text-gray-500 dark:text-gray-400">&copy; 2024 Safebition. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
