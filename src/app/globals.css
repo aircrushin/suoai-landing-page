@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-hero-bg {
+    background-image: url('/hero-bg.png'); /* 根据实际图片路径修改 */
+    background-size: cover;
+    background-position: center;
+  }

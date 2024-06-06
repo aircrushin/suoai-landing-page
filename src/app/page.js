@@ -7,7 +7,6 @@ import Ability from "@/components/ability"
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-gradient-to-b from-white to-blue-200">
-      <Header />
       <main className="flex-1">
         <Hero />
         <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
@@ -43,11 +42,10 @@ export default function Component() {
             </div>
           </div>
         </section>
-
         <Ability></Ability>
         <Contact></Contact>
-        <Footer></Footer>
       </main>
+      <Footer></Footer>
     </div>
   )
 }
