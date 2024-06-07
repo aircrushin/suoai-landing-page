@@ -7,3 +7,10 @@
     background-size: cover;
     background-position: center;
   }
+
+  .bg-ability-bg {
+    background-image: url('/ability/bg.png'); /* 根据实际图片路径修改 */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+  }
