@@ -8,19 +8,19 @@ export default function Features() {
         <div className="grid gap-6 lg:grid-cols-4 md:grid-cols-2">
           <img
             src="/features/fea1.png"
-            className="hover:scale-105 transition-transform transform"
+            className="hover:scale-105 transition-transform transform w-full h-full object-cover"
           />
           <img
             src="/features/fea2.png"
-            className="hover:scale-105 transition-transform transform"
+            className="hover:scale-105 transition-transform transform w-full h-full object-cover"
           />
           <img
             src="/features/fea3.png"
-            className="hover:scale-105 transition-transform transform"
+            className="hover:scale-105 transition-transform transform w-full h-full object-cover"
           />
           <img
             src="/features/fea4.png"
-            className="hover:scale-105 transition-transform transform"
+            className="hover:scale-105 transition-transform transform w-full h-full object-cover"
           />
         </div>
       </div>
